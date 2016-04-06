@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="groups">
+        <item>关于</item>
+        <item>定时提醒</item>
+    </array>
+
+    <!-- 以全角冒号分割 -->
+    <array name="child_0">
+        <item>作者：oneym</item>
+        <item>版本：v1.0</item>
+        <item>项目：https://github.com/oneym/LibsLab</item>
+    </array>
+    <array name="child_1">
+        <item>1s后提醒(测试)</item>
+        <item>设置周期提醒</item>
+    </array>
+</resources>

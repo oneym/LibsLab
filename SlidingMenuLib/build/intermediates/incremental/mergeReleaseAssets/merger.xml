@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/oneym/workspace/android_m/LibsLab/SlidingMenuLib/assets"/><source path="/home/oneym/workspace/android_m/LibsLab/SlidingMenuLib/build/generated/assets/shaders/release"/></dataSet><dataSet config="release"><source path="/home/oneym/workspace/android_m/LibsLab/SlidingMenuLib/src/release/assets"/></dataSet></merger>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="false">
+        <shape android:shape="rectangle">
+            <gradient android:endColor="#efffffff" android:startColor="#efffffff"></gradient>
+
+            <!-- 设置内填充 -->
+            <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp" />
+
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <gradient android:endColor="#ecdcdcdc" android:startColor="#ecdcdcdc"></gradient>
+
+            <!-- 设置内填充 -->
+            <padding android:bottom="7dp" android:left="7dp" android:right="7dp" android:top="7dp" />
+
+            <!-- 设置圆角矩形 -->
+            <corners android:radius="20dp" />
+        </shape>
+    </item>
+
+</selector>

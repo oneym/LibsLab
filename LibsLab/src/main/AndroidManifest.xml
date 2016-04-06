@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.oneym.libslab">
+
+    <application android:allowBackup="true">
+
+        <!-- 提醒广播接收器 -->
+        <receiver android:name=".widget.OBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.oneym.libslab.widget.BC_NOTIFICATION_ACTION" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".OActivity"></activity>
+    </application>
+
+</manifest>

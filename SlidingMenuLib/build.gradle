@@ -1,0 +1,35 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+    provided 'com.android.support:support-v4:18.0.+'
+    compile fileTree(include: '*.jar', dir: 'libs')
+    compile project(':Actionbarsherlock')
+}
+
+android {
+    compileSdkVersion 16
+    buildToolsVersion "23.0.1"
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src']
+            resources.srcDirs = ['src']
+            aidl.srcDirs = ['src']
+            renderscript.srcDirs = ['src']
+            res.srcDirs = ['res']
+            assets.srcDirs = ['assets']
+
+            manifest.srcFile 'AndroidManifest.xml'
+        }
+    }
+
+}

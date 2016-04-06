@@ -1,0 +1,1 @@
+include ':app', ':LibsLab', ':SlidingMenuLib', ':SlideDayTimePicker', ':multi-image-selector', ':Actionbarsherlock'

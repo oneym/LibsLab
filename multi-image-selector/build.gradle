@@ -1,0 +1,49 @@
+apply plugin: 'com.android.library'
+
+//repositories {
+//    flatDir {
+//        dirs '/libs'
+//    }
+//}
+
+dependencies {
+    //    fileTree(dir: 'libs', include: '**/*.aar')
+    //            .each { File file ->
+    //        dependencies.add("compile", [name: file.name.lastIndexOf('.').with {
+    //            it != -1 ? file.name[0..<it] : file.name
+    //        }, ext                           : 'aar'])
+    //    }
+    provided fileTree(include: ['*.jar'], dir: 'libs')
+    provided 'com.android.support:support-v4:23.1.1'
+    //compile 'com.android.support:appcompat-v7:22.0.0'
+    //compile 'com.squareup.picasso:picasso:2.4.0'
+    compile project(':Actionbarsherlock')
+}
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '23.0.1'
+
+    lintOptions {
+        abortOnError false
+    }
+
+    defaultConfig {
+        minSdkVersion 11
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
