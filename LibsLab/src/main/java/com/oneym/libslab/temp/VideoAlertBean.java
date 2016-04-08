@@ -3,7 +3,7 @@ package com.oneym.libslab.temp;
 import com.oneym.libslab.utils.common.Utils;
 
 /**
- * 视频提醒记录基类
+ * 提醒记录基类
  *
  * @author oneym oneym@sina.cn
  * @since 20151127161706
@@ -51,7 +51,7 @@ public class VideoAlertBean {
             return "null";
 
         String w = "";
-        if ((getWeek() -1) == 0)
+        if ((getWeek() - 1) == 0)
             w = "日";
         else
             w = Utils.num2String(getWeek() - 1);

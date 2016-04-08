@@ -260,12 +260,12 @@
         "source": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/bundles/debug/res/drawable-mdpi-v4/abs__tab_selected_holo.9.png"
     },
     {
-        "merged": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abs__textfield_search_right_default_holo_light.9.png",
-        "source": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/bundles/debug/res/drawable-mdpi-v4/abs__textfield_search_right_default_holo_light.9.png"
-    },
-    {
         "merged": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abs__ab_bottom_solid_inverse_holo.9.png",
         "source": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/bundles/debug/res/drawable-mdpi-v4/abs__ab_bottom_solid_inverse_holo.9.png"
+    },
+    {
+        "merged": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abs__textfield_search_right_default_holo_light.9.png",
+        "source": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/bundles/debug/res/drawable-mdpi-v4/abs__textfield_search_right_default_holo_light.9.png"
     },
     {
         "merged": "/home/oneym/workspace/android_m/LibsLab/Actionbarsherlock/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4/abs__spinner_ab_disabled_holo_light.9.png",

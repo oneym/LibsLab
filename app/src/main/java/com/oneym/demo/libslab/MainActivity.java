@@ -1,5 +1,6 @@
 package com.oneym.demo.libslab;
 
+import android.content.Intent;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.res.Resources;
@@ -13,13 +14,11 @@ import android.widget.TextView;
 import com.oneym.libslab.OActivity;
 import com.oneym.libslab.utils.common.Log;
 import com.oneym.libslab.utils.common.Utils;
-import com.oneym.libslab.utils.string.UtilsString;
 import com.oneym.libslab.widget.OExpandableListView;
 import com.oneym.libslab.widget.ONotification;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 public class MainActivity extends OActivity implements OExpandableListView.OnGetViewListener, ExpandableListView.OnChildClickListener {
 
@@ -139,6 +138,10 @@ public class MainActivity extends OActivity implements OExpandableListView.OnGet
                 Utils.toast(this, "1s后提醒(测试)[启动]");
                 ONotification.load(R.mipmap.ic_launcher, "测试标题", "1s后提醒(测试)");
                 ONotification.getInstance().startAt(System.currentTimeMillis() + 1000);
+                break;
+            case "设置周期提醒":
+                Utils.toast(this, "设置周期提醒");
+                startActivity(new Intent(this, CycleTimeAlertActivity.class));
                 break;
         }
 
