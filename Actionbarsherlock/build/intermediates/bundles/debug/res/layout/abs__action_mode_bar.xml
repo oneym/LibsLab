@@ -22,3 +22,4 @@
      android:layout_height="wrap_content"
      android:visibility="gone"
      style="?attr/actionModeStyle" />
+<!-- From: file:/home/oneym/workspace/studio/LibsLab/Actionbarsherlock/res/layout/abs__action_mode_bar.xml -->

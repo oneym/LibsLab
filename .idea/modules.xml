@@ -3,11 +3,16 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Actionbarsherlock/Actionbarsherlock.iml" filepath="$PROJECT_DIR$/Actionbarsherlock/Actionbarsherlock.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Actionbarsherlock/Actionbarsherlock.iml" filepath="$PROJECT_DIR$/Actionbarsherlock/Actionbarsherlock.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibsLab.iml" filepath="$PROJECT_DIR$/LibsLab.iml" />
       <module fileurl="file://$PROJECT_DIR$/LibsLab/LibsLab-LibsLab.iml" filepath="$PROJECT_DIR$/LibsLab/LibsLab-LibsLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LibsLab/LibsLab-LibsLab.iml" filepath="$PROJECT_DIR$/LibsLab/LibsLab-LibsLab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlideDayTimePicker/SlideDayTimePicker.iml" filepath="$PROJECT_DIR$/SlideDayTimePicker/SlideDayTimePicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlideDayTimePicker/SlideDayTimePicker.iml" filepath="$PROJECT_DIR$/SlideDayTimePicker/SlideDayTimePicker.iml" />
       <module fileurl="file://$PROJECT_DIR$/SlidingMenuLib/SlidingMenuLib.iml" filepath="$PROJECT_DIR$/SlidingMenuLib/SlidingMenuLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SlidingMenuLib/SlidingMenuLib.iml" filepath="$PROJECT_DIR$/SlidingMenuLib/SlidingMenuLib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
       <module fileurl="file://$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" filepath="$PROJECT_DIR$/multi-image-selector/multi-image-selector.iml" />
     </modules>
   </component>

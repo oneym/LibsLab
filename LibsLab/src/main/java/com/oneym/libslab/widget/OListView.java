@@ -133,7 +133,7 @@ public class OListView extends ListView implements AbsListView.OnScrollListener 
                 if (null != item) {
                     xpos = (int) ev.getRawX();
                     ypos = (int) ev.getRawY();
-                    touchedItem = UtilsView.getParentItemChildByPoint(item, xpos, ypos);
+                    touchedItem = UtilsView.getParentItemChildByPoint(item, xpos, ypos, ev.getRawY() - ev.getY());
                     return null != touchedItem;//返回true后面的事件不经过这个方法
                 }
                 break;

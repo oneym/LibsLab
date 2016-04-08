@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string-array name="days_array">
         <item>@string/sunday</item>
         <item>@string/monday</item>
@@ -9,8 +11,12 @@
         <item>@string/friday</item>
         <item>@string/saturday</item>
     </string-array>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/src/main/res/values/colors.xml -->
+    <eat-comment/>
     <item name="gray_holo_dark" type="color">#ff464646</item>
     <item name="gray_holo_light" type="color">#ffd0d0d0</item>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/src/main/res/values/strings.xml -->
+    <eat-comment/>
     <string name="friday">星期五</string>
     <string name="monday">星期一</string>
     <string name="saturday">星期六</string>
@@ -20,6 +26,8 @@
     <string name="thursday">星期四</string>
     <string name="tuesday">星期二</string>
     <string name="wednesday">星期三</string>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/src/main/res/values/styles.xml -->
+    <eat-comment/>
     <style name="AppBaseTheme" parent="android:Theme.Light">
         <!--
             Theme customizations available in newer API levels can go in

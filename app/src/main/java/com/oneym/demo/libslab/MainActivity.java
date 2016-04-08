@@ -141,7 +141,7 @@ public class MainActivity extends OActivity implements OExpandableListView.OnGet
                 break;
             case "设置周期提醒":
                 Utils.toast(this, "设置周期提醒");
-                startActivity(new Intent(this, CycleTimeAlertActivity.class));
+                startActivity(new Intent(this, AlertActivity.class));
                 break;
         }
 

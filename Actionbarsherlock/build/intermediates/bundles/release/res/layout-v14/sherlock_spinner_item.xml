@@ -24,3 +24,4 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:ellipsize="marquee" />
+<!-- From: file:/home/oneym/workspace/studio/LibsLab/Actionbarsherlock/res/layout-v14/sherlock_spinner_item.xml -->

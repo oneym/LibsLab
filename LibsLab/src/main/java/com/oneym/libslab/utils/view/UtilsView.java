@@ -45,34 +45,42 @@ public class UtilsView {
      * 使用递归来寻找原子view，再与坐标对比得出点击的视图
      *
      * @param v    父视图组
-     * @param xpos x坐标
-     * @param ypos y坐标
+     * @param rawx x坐标
+     * @param rawy y坐标
      * @return 返回子视图，null表示在父视图组中没有找到包含该点的子视图。
      */
-    public static View getParentItemChildByPoint(View v, int xpos, int ypos) {
+    public static View getParentItemChildByPoint(View v, int rawx, int rawy, float delta) {
         View child = null;
-        if (View.VISIBLE == v.getVisibility())
-            //for (int i = 0; i < v.getChildCount(); i++) {
-            Log.out(v + " instanceof ViewGroup=" + (v instanceof ViewGroup));
+        //for (int i = 0; i < v.getChildCount(); i++) {
+        Log.out(v + " instanceof ViewGroup=" + (v instanceof ViewGroup));
         //进入layout、listview内部，找到textview等原子视图，各种layout、listview都是ViewGroup的直接子类，ViewGroup是View的直接子类
-        if (v instanceof ViewGroup) {
+        if (View.VISIBLE == v.getVisibility() && v instanceof ViewGroup) {
             ViewGroup vs = (ViewGroup) v;
             for (int i = 0; i < vs.getChildCount(); i++) {
-                View v_ = getParentItemChildByPoint(vs.getChildAt(i), xpos, ypos);
-                if (v_ instanceof View)
+                View v_ = getParentItemChildByPoint(vs.getChildAt(i), rawx, rawy, delta);
+                Log.out(v_ + " v_ instanceof View = " + (v_ instanceof View));
+                if (!(v_ instanceof ViewGroup) && v_ instanceof View)
                     return v_;
             }
         }
 
         Rect rect = new Rect();
+        Rect p_rect = new Rect();
+        v.getHitRect(p_rect);
+        Log.out("v = " + v + ",p_rect.bottom=" + p_rect.bottom);
+        Log.out("v.getX()=" + v.getX() + ",v.getY=" + v.getY() + ",v.getHeight()=" + v.getHeight());
         v.getGlobalVisibleRect(rect);//获得子组件在窗口世界坐标系的坐标，窗口世界就是手机屏幕
-
-        if (rect.contains(xpos, ypos)) {
-            //Log.out(v.getChildAt(i).toString() + ":" + rect.left + "," + rect.top + "," + rect.right + "," + rect.bottom);
+        Log.out("rect:" + rect.left + "," + rect.top + "," + rect.right + "," + rect.bottom);
+        //rect.top = rect.top - v.getHeight() - (int) v.getY();
+        //rect.bottom = rect.bottom - v.getHeight() - (int) v.getY();
+        rect.top = rect.top - (int) delta;
+        rect.bottom = rect.bottom - (int) delta;
+        Log.out("rect:" + rect.left + "," + rect.top + "," + rect.right + "," + rect.bottom);
+        Log.out("xpos=" + rawx + ",ypos=" + rawy);
+        if (rect.contains(rawx, rawy)) {
             child = (View) v;
             Log.out(child);
         }
-        //}
         return child;
     }
 

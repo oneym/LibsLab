@@ -9,7 +9,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="50dp">
 
-        <com.oneym.demo.libslab.widget.ScrollListviewDelete
+        <com.oneym.libslab.widget.ScrollListviewDelete
             android:id="@+id/alert_list"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

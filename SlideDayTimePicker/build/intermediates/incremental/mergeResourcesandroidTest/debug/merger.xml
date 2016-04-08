@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res"><file name="selection_divider" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/drawable-mdpi/selection_divider.9.png" qualifiers="mdpi" type="drawable"/><file path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/values-v11/values-v11.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 11 theme customizations can go here. -->
+    </style></file><file name="selection_divider" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/drawable-xhdpi/selection_divider.9.png" qualifiers="xhdpi" type="drawable"/><file name="slide_day_time_picker" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/layout/slide_day_time_picker.xml" qualifiers="" type="layout"/><file name="fragment_time" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/layout/fragment_time.xml" qualifiers="" type="layout"/><file name="fragment_day" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/layout/fragment_day.xml" qualifiers="" type="layout"/><file name="custom_tab" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/layout/custom_tab.xml" qualifiers="" type="layout"/><file path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/values/values.xml" qualifiers=""><string name="friday">星期五</string><string name="wednesday">星期三</string><string name="thursday">星期四</string><string name="monday">星期一</string><item name="gray_holo_light" type="color">#ffd0d0d0</item><string name="tab_time">Time</string><item name="gray_holo_dark" type="color">#ff464646</item><string name="saturday">星期六</string><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style><string name="tab_day">Day</string><string name="sunday">星期日</string><string name="tuesday">星期二</string><string-array name="days_array">
+        <item>@string/sunday</item>
+        <item>@string/monday</item>
+        <item>@string/tuesday</item>
+        <item>@string/wednesday</item>
+        <item>@string/thursday</item>
+        <item>@string/friday</item>
+        <item>@string/saturday</item>
+    </string-array><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style></file><file name="selection_divider" path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/drawable-hdpi/selection_divider.9.png" qualifiers="hdpi" type="drawable"/><file path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/intermediates/bundles/debug/res/values-v14/values-v14.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- API 14 theme customizations can go here. -->
+    </style></file></source></dataSet><dataSet config="main"><source path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/src/androidTest/res"/><source path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/generated/res/rs/androidTest/debug"/><source path="/home/oneym/workspace/studio/LibsLab/SlideDayTimePicker/build/generated/res/resValues/androidTest/debug"/></dataSet><mergedItems/></merger>

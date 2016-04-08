@@ -5,29 +5,29 @@ import android.os.Handler;
 import android.widget.Toast;
 
 import com.github.jjobes.slidedaytimepicker.SlideDayTimeListener;
-import com.oneym.libslab.temp.VideoAlertBean;
+import com.oneym.demo.libslab.bean.AlertBean;
 import com.oneym.libslab.utils.Constants;
 import com.oneym.libslab.utils.common.Log;
 
 /**
- * 这是个职位女人帮2.0服务的监听中间类
+ * 时间选择器监听中间类
  *
  * @author oneym oneym@sina.cn
  * @since 20151128145343
  */
 public class SlideDayTimeListen {
     private static SlideDayTimeListen instance = null;
-    private VideoAlertBean bean = null;
+    private AlertBean bean = null;
     private Context context = null;
     private Handler mHandler = null;
-    private VideoAlertBean _bean = null;
+    private AlertBean _bean = null;
     public final SlideDayTimeListener slideDayTimeListener = new SlideDayTimeListener() {
 
         long id = -1;
 
         @Override
         public void onDayTimeSet(int day, int hour, int minute) {
-            bean = new VideoAlertBean();
+            bean = new AlertBean();
             String time = "";
             if (hour < 10)
                 time = "0" + Integer.toString(hour);
@@ -76,7 +76,7 @@ public class SlideDayTimeListen {
         return instance;
     }
 
-    public void setResource(Context context, VideoAlertBean bean, Handler mHandler) {
+    public void setResource(Context context, AlertBean bean, Handler mHandler) {
         this.context = context;
         this.mHandler = mHandler;
         this._bean = bean;

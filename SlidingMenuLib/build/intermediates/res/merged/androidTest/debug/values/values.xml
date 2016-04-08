@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlidingMenuLib/build/intermediates/exploded-aar/LibsLab/Actionbarsherlock/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <attr format="reference|color" name="background"/>
     <attr format="reference|color" name="backgroundSplit"/>
     <attr format="reference" name="divider"/>
@@ -49,7 +51,11 @@
     <item name="abs__progress_circular" type="id"/>
     <item name="abs__progress_horizontal" type="id"/>
     <item name="abs__up" type="id"/>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlidingMenuLib/build/intermediates/bundles/debug/res/values/values.xml -->
+    <eat-comment/>
     <item name="selected_view" type="id"/>
+    <!-- From: file:/home/oneym/workspace/studio/LibsLab/SlidingMenuLib/build/intermediates/exploded-aar/LibsLab/Actionbarsherlock/unspecified/res/values/values.xml -->
+    <eat-comment/>
     <integer name="abs__max_action_buttons">2</integer>
     <string name="abs__action_bar_home_description">Navigate home</string>
     <string name="abs__action_bar_up_description">Navigate up</string>
