@@ -44,12 +44,20 @@ public class UtilsView {
      * 2、who are you<br/>
      * 使用递归来寻找原子view，再与坐标对比得出点击的视图
      *
-     * @param v    父视图组
-     * @param rawx x坐标
-     * @param rawy y坐标
+     * @param v     父视图组
+     * @param xpos  x坐标，event.getX()的值
+     * @param ypos  y坐标,event.getY()的值
+     * @param delta event.getRawY()-event.getY()的值
      * @return 返回子视图，null表示在父视图组中没有找到包含该点的子视图。
      */
-    public static View getParentItemChildByPoint(View v, int rawx, int rawy, float delta) {
+    public static View getParentItemChildByPoint(View v, int xpos, int ypos, float delta) {
+        //增加了delta参数，使视图寻找更加精确，耗时5h
+
+        if (null == v) {
+            Log.out("参数v是null");
+            return v;
+        }
+
         View child = null;
         //for (int i = 0; i < v.getChildCount(); i++) {
         Log.out(v + " instanceof ViewGroup=" + (v instanceof ViewGroup));
@@ -57,7 +65,7 @@ public class UtilsView {
         if (View.VISIBLE == v.getVisibility() && v instanceof ViewGroup) {
             ViewGroup vs = (ViewGroup) v;
             for (int i = 0; i < vs.getChildCount(); i++) {
-                View v_ = getParentItemChildByPoint(vs.getChildAt(i), rawx, rawy, delta);
+                View v_ = getParentItemChildByPoint(vs.getChildAt(i), xpos, ypos, delta);
                 Log.out(v_ + " v_ instanceof View = " + (v_ instanceof View));
                 if (!(v_ instanceof ViewGroup) && v_ instanceof View)
                     return v_;
@@ -73,11 +81,11 @@ public class UtilsView {
         Log.out("rect:" + rect.left + "," + rect.top + "," + rect.right + "," + rect.bottom);
         //rect.top = rect.top - v.getHeight() - (int) v.getY();
         //rect.bottom = rect.bottom - v.getHeight() - (int) v.getY();
-        rect.top = rect.top - (int) delta;
-        rect.bottom = rect.bottom - (int) delta;
+        rect.top = rect.top - (int) Math.abs(delta);
+        rect.bottom = rect.bottom - (int) Math.abs(delta);
         Log.out("rect:" + rect.left + "," + rect.top + "," + rect.right + "," + rect.bottom);
-        Log.out("xpos=" + rawx + ",ypos=" + rawy);
-        if (rect.contains(rawx, rawy)) {
+        Log.out("xpos=" + xpos + ",ypos=" + ypos);
+        if (rect.contains(xpos, ypos)) {
             child = (View) v;
             Log.out(child);
         }

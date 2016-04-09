@@ -18,6 +18,17 @@
             <option value="$PROJECT_DIR$/multi-image-selector" />
           </set>
         </option>
+        <option name="myModules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Actionbarsherlock" />
+            <option value="$PROJECT_DIR$/LibsLab" />
+            <option value="$PROJECT_DIR$/SlideDayTimePicker" />
+            <option value="$PROJECT_DIR$/SlidingMenuLib" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/multi-image-selector" />
+          </set>
+        </option>
       </GradleProjectSettings>
     </option>
   </component>
